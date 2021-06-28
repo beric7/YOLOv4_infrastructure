@@ -1,6 +1,6 @@
 # YOLOv4_infrastructure
 
-YOLOv4 Paper: https://arxiv.org/abs/2004.10934
+YOLOv4 [Paper](https://arxiv.org/abs/2004.10934).
 
 ## Requirements
 - CMake >= 3.18
@@ -11,15 +11,12 @@ YOLOv4 Paper: https://arxiv.org/abs/2004.10934
 - GPU with Compute Capability (CC) >= 3.0 (If GPU a GeForce GTX 650 or newer it is most likely compatible)
 
 ## Setup for Training
-1. Clone the repository:
-
-    <git clone https://github.com/AlexeyAB/darknet.git>
+1. Clone the [repository](https://github.com/AlexeyAB/darknet.git)
 
 
-2. Download the base weight file yolov4.conv.137 to use for initial training and place within the "darknet" directory
-    https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137
+2. Download the base weight file [***yolov4.conv.137***](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137) to use for initial training and place within the "darknet" directory
 
-3. Create a directory named "obj" for the training image dataset and the image size should be a multiple of 32 pixels
+3. Create a directory named "obj" for the training image dataset and the image size should be a **multiple of 32 pixels**
 
      Example: 128x128, 320x320, 512x512 ....
 
@@ -29,7 +26,7 @@ YOLOv4 Paper: https://arxiv.org/abs/2004.10934
      
     - Yolov4 format:
     
-       <object_index> <relative_obj_x_center> <relative_obj_y_center> <relative_obj_width> <relative_obj_height>
+          <object_index> <relative_obj_x_center> <relative_obj_y_center> <relative_obj_width> <relative_obj_height>
 
     - Where the relative centers are the centers of each of the object's bounding boxes relative to the overall image's center
         and the relative width/height are each of the object's bounding boxes relative to the overall image's width/height
@@ -50,12 +47,12 @@ YOLOv4 Paper: https://arxiv.org/abs/2004.10934
       
           0 0.8016 0.4391 0.09062 0.7344
        
-   ### Note:
+   **Note**:
    
     - If there are 6 bounding boxes in an image, there should be a text file with 6 lines in the yolov4 format
       explained above for each image.
 
-5. Create a train.txt file within the darknet/data directory
+5. Create a ***train.txt*** file within the darknet/data directory
     - The txt file train.txt should contain the path to every image in the training dataset
       Example:
       
@@ -64,12 +61,11 @@ YOLOv4 Paper: https://arxiv.org/abs/2004.10934
           data/obj/Black Camera DSCF170.jpeg
           data/obj/Black Camera DSCF182.jpeg
 
-6. Create a "obj.names" and "obj.data" file within the darknet/data directory
+6. Create a ***obj.names*** and ***obj.data*** file within the darknet/data directory
 
     - The contents of "obj.names" should contain each labeled object in the order they are indexed above for the yolov4 format txt files
-      obj.data 
     
-    - Example:
+    - obj.names Example:
       
           Bearing
           Out of Plane Stiffener
@@ -83,7 +79,7 @@ YOLOv4 Paper: https://arxiv.org/abs/2004.10934
            names = data/obj.names
            backup = backup/
 
-7. If there is not a yolov4-obj.cfg file within the cfg directory, create one and copy and paste the contents from
+7. If there is not a ***yolov4-obj.cfg*** file within the cfg directory, create one and copy and paste the contents from
      yolov4-custom.cfg to the new yolov4-obj.cfg
 
         Once the yolov4-obj.cfg file is located, change the following:
