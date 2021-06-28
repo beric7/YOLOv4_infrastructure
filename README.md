@@ -84,6 +84,7 @@ YOLOv4 [Paper](https://arxiv.org/abs/2004.10934).
 
         Once the yolov4-obj.cfg file is located, change the following:
           A. Ensure the width and height values on lines 8 and 9 are the correct values for you training data
+          
           B. Ensure lines 6 and 7 have the following values:
             batch = 64
             subdivisions=16
@@ -96,7 +97,43 @@ YOLOv4 [Paper](https://arxiv.org/abs/2004.10934).
 
           E. Set the number of classes on lines 970, 1058, 1146 to the following:
             classes = <total_number_of_indexed_objects>
+            
           F. Set the value for filters on lines 963, 1051, 1139 to the following:
             filters = (classes + 5) * 3
+            
+## Training with Yolov4
 
+- Ensure the following values for the darknet Makefile:
+'''
+GPU=1 CUDNN=1 CUDNN_HALF=1 OPENCV=1
+'''
 
+- Command for training if the directory was setup as shown above:
+'''
+/darknet detector train data/obj.data cfg/yolo-obj.cfg yolov4.conv.137 -dont_show
+'''
+
+- The weights are updated and saved every 1000 iterations of training and can be found within the "darknet/backup" directory.
+  Training can be resumed for checkpoint weights by changing the command to the example below:
+'''
+/darknet detector train data/obj.data cfg/yolo-obj.cfg backup/yolo-obj_3000.weights -dont_show
+'''
+
+## Evaluating Trained Yolov4 Model
+
+- The following command can be used to evaluate the model using Mean Average Precision (MAP)
+'''
+/darknet detector map data/obj.data cfg/yolo-obj.cfg backup/yolo-obj_8000.weights
+'''    
+    
+- You can also train with the "-map" flag on the end of the above training commands to track the mAP %
+  which is graphed on the chart.png within the darknet directory but requires: 'valid=valid.txt' to be added
+  within the ***obj.data*** file
+  
+## Testing the Trained Yolov4 Model
+
+- Once the model has been trained, the detector test should be used with the model achieving the highest mAP score. 
+- The model can be tested by adding a sample image in the "darknet/data" directory and use the following command:
+'''
+/darknet detector test data/obj.data cfg/yolo-obj.cfg backup/yolo-obj_8000.weights data/<test_image>
+'''
