@@ -2,6 +2,13 @@
 
 YOLOv4 [Paper](https://arxiv.org/abs/2004.10934).
 
+## Summary
+
+- YoloV4 is a real-time state-of-the-art object detector. Modern Neural Networks operated in real-time
+  require significant power from multiple GPU's, while YoloV4 uses a Convolutional Neural Network (CNN) that
+  can reduce the consumption to one singular GPU. YoloV4 has comparable results to state-of-the-art real-time
+  object detection models and runs twice as fast
+
 ## Requirements
 - CMake >= 3.18
 - Powershell for Windows
@@ -79,10 +86,10 @@ YOLOv4 [Paper](https://arxiv.org/abs/2004.10934).
            names = data/obj.names
            backup = backup/
 
-7. If there is not a ***yolov4-obj.cfg*** file within the cfg directory, create one and copy and paste the contents from
-     yolov4-custom.cfg to the new yolov4-obj.cfg
+7. If there is not a ***yolo-obj.cfg*** file within the cfg directory, create one and copy and paste the contents from
+     yolov4-custom.cfg to the new yolo-obj.cfg
 
-        Once the yolov4-obj.cfg file is located, change the following:
+        Once the yolo-obj.cfg file is located, change the following:
           A. Ensure the width and height values on lines 8 and 9 are the correct values for you training data
           
           B. Ensure lines 6 and 7 have the following values:
