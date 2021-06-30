@@ -110,6 +110,8 @@ YOLOv4 [Paper](https://arxiv.org/abs/2004.10934).
             
 ## Training with Yolov4
 
+# TODO Add google colab 
+
 - Ensure the following values for the darknet Makefile:
 ```
 GPU=1 CUDNN=1 CUDNN_HALF=1 OPENCV=1
