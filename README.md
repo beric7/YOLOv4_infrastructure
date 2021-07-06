@@ -30,7 +30,7 @@
 
 - The model achieved the highest **Mean Average Precision (mAP)** score at the **7000 iteration** checkpoint with a **mAP score of 84.52%**
 - The model began to experience overfitting around **8000 iterations** and therefore the mAP score would decrease with further iterations
-- 
+
 <p align="center">
     <img src="https://user-images.githubusercontent.com/54971419/124635837-e45fc480-de55-11eb-97ea-d66ea55fcf8b.png" />
     <img src="https://user-images.githubusercontent.com/54971419/124629491-7e703e80-de4f-11eb-9b9a-08bc2cb14d09.png" />
