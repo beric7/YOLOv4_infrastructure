@@ -4,7 +4,7 @@
 
 [Original Github](https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects)
 
-[Google Colab](https://colab.research.google.com/drive/1MOjUxrYAl05Be2QVPyDC0D8bZ2TVXCif)
+[Custom Training Google Colab](https://colab.research.google.com/drive/1MOjUxrYAl05Be2QVPyDC0D8bZ2TVXCif)
 
 ## Yolov4 Summary
 
@@ -26,9 +26,10 @@
 
 - Created a yolov4 conversion script, **TODO add name**, to convert our xml annotations to the yolov4 textfile format
 
-### One of our Resultant Images from Testing
+### Resultant Images from Testing
 
 ![image](https://user-images.githubusercontent.com/54971419/124629491-7e703e80-de4f-11eb-9b9a-08bc2cb14d09.png)
+![image](https://user-images.githubusercontent.com/54971419/124634018-dc068a00-de53-11eb-8506-39b72397e5f4.png)
 
 ## Requirements
 - CMake >= 3.18
@@ -37,6 +38,10 @@
 - OpenCV >= 2.4
 - Nvidia cuDNN >= 8.0.2
 - GPU with Compute Capability (CC) >= 3.0 (If GPU a GeForce GTX 650 or newer it is most likely compatible)
+
+## Reproduce Results
+- Download the [Google Colab](https://colab.research.google.com/drive/1MOjUxrYAl05Be2QVPyDC0D8bZ2TVXCif) to Google Drive and clone this
+  repository.
 
 ## Setup for Training
 1. Clone the [repository](https://github.com/AlexeyAB/darknet.git)
