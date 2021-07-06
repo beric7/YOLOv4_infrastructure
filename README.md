@@ -1,13 +1,22 @@
 # YOLOv4_infrastructure
 
 YOLOv4 [Paper](https://arxiv.org/abs/2004.10934).
+[Original Github](https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects)
+[Colab](https://colab.research.google.com/drive/1MOjUxrYAl05Be2QVPyDC0D8bZ2TVXCif)
 
-## Summary
+## Yolov4 Summary
 
 - YoloV4 is a real-time state-of-the-art object detector. Modern Neural Networks operated in real-time
   require significant power from multiple GPU's, while YoloV4 uses a Convolutional Neural Network (CNN) that
   can reduce the consumption to one singular GPU. YoloV4 has comparable results to state-of-the-art real-time
   object detection models and runs twice as fast
+
+## Overview
+- Our implementation had difficulties running from console due to compatibility issues with cmake
+  and opencv while trying to build the project, but had promising results by implementing Yolov4
+  through [Google Colab](https://colab.research.google.com/drive/1MOjUxrYAl05Be2QVPyDC0D8bZ2TVXCif) 
+
+![image](https://user-images.githubusercontent.com/54971419/124629491-7e703e80-de4f-11eb-9b9a-08bc2cb14d09.png)
 
 ## Requirements
 - CMake >= 3.18
@@ -108,14 +117,12 @@ YOLOv4 [Paper](https://arxiv.org/abs/2004.10934).
           F. Set the value for filters on lines 963, 1051, 1139 to the following:
             filters = (classes + 5) * 3
             
-## Training with Yolov4
-
-# TODO Add google colab 
-
-- Ensure the following values for the darknet Makefile:
-```
-GPU=1 CUDNN=1 CUDNN_HALF=1 OPENCV=1
-```
+## Custom Training with Yolov4
+- Download the Google Colab to Google Drive
+- If not already installed, download the Google Colab App for Google Drive
+- Allow Colab to provide a GPU Hardware Accelerator by clicking **edit** at the top left of the screen, then 
+**Notebook Settings** and finally make sure the **GPU** dropbox is selected under **Hardware Accelerator**
+- Follow the steps for **Setup for Training** and upload this directory to the user's google drive along with the images.
 
 - Command for training if the directory was setup as shown above:
 ```
