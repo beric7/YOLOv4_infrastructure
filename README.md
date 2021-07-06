@@ -29,12 +29,15 @@
 - Created a yolov4 conversion script, **TODO add name**, to convert our xml annotations to the yolov4 textfile format
 
 <p align="center">
+    <img src="https://user-images.githubusercontent.com/54971419/124635837-e45fc480-de55-11eb-97ea-d66ea55fcf8b.png" />
     <img src="https://user-images.githubusercontent.com/54971419/124629491-7e703e80-de4f-11eb-9b9a-08bc2cb14d09.png" />
 </p>
 
 <p align="center">
+    <img src="https://user-images.githubusercontent.com/54971419/124635758-cb571380-de55-11eb-8d3d-419603c25c81.png" />
     <img src="https://user-images.githubusercontent.com/54971419/124635122-145a9800-de55-11eb-844f-230ba745c5aa.png" />
 </p>
+
 ## Requirements
 - CMake >= 3.18
 - Powershell for Windows
