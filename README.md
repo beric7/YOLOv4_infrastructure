@@ -26,7 +26,7 @@
 
 - Created a yolov4 conversion script, **TODO add name**, to convert our xml annotations to the yolov4 textfile format
 
-- One of our Resultant Images from Testing
+### One of our Resultant Images from Testing
 
 ![image](https://user-images.githubusercontent.com/54971419/124629491-7e703e80-de4f-11eb-9b9a-08bc2cb14d09.png)
 
