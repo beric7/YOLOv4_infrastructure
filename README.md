@@ -1,8 +1,10 @@
 # YOLOv4_infrastructure
 
-YOLOv4 [Paper](https://arxiv.org/abs/2004.10934).
+[YOLOv4 Paper](https://arxiv.org/abs/2004.10934).
+
 [Original Github](https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects)
-[Colab](https://colab.research.google.com/drive/1MOjUxrYAl05Be2QVPyDC0D8bZ2TVXCif)
+
+[Google Colab](https://colab.research.google.com/drive/1MOjUxrYAl05Be2QVPyDC0D8bZ2TVXCif)
 
 ## Yolov4 Summary
 
@@ -15,7 +17,16 @@ YOLOv4 [Paper](https://arxiv.org/abs/2004.10934).
 - Our implementation had difficulties running from console due to compatibility issues with cmake
   and opencv while trying to build the project, but had promising results by implementing Yolov4
   through [Google Colab](https://colab.research.google.com/drive/1MOjUxrYAl05Be2QVPyDC0D8bZ2TVXCif) 
+  
+- Our dataset was focused on the structual components found on the underside of bridges. The images in the dataset were annotated
+  using [labelme](https://github.com/wkentaro/labelme). 
+  
+- Created a conversion script, **TODO add name**, to take the resultant labelme json file and convert it to text file format so the keypoint values could
+  be stored and used to create the xml format annotations for our objects. This script then converts back to json format.
 
+- Created a yolov4 conversion script, **TODO add name**, to convert our xml annotations to the yolov4 textfile format
+
+- One of our Resultant Images from Testing
 ![image](https://user-images.githubusercontent.com/54971419/124629491-7e703e80-de4f-11eb-9b9a-08bc2cb14d09.png)
 
 ## Requirements
