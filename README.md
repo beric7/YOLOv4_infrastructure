@@ -6,6 +6,8 @@
 
 [Custom Training Google Colab](https://colab.research.google.com/drive/1MOjUxrYAl05Be2QVPyDC0D8bZ2TVXCif)
 
+**TODO add colab that clones our repository for reproducing results**
+
 ## Yolov4 Summary
 
 - YoloV4 is a real-time state-of-the-art object detector. Modern Neural Networks operated in real-time
@@ -170,4 +172,9 @@
 - The model can be tested by adding a sample image in the "darknet/data" directory and use the following command:
 ```
 /darknet detector test data/obj.data cfg/yolo-obj.cfg backup/yolo-obj_8000.weights data/<test_image>
+```
+
+- The output image from testing will be names **prediction.jpg** and can be shown by using:
+```
+colabImageShow('predictions.jpg')
 ```
