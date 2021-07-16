@@ -60,7 +60,7 @@ Out of Plane Stiffener: 94%	(left_x:  278   top_y:   -1   width:   43   height: 
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/54971419/125976914-07381084-6c3b-4ba1-b7e8-ce53e3bd436f.png" />
-    <img src="https://user-images.githubusercontent.com/54971419/125977101-6b47c46c-1e55-49bf-8377-c2633dec444d.png" />
+    <img src="https://user-images.githubusercontent.com/54971419/125977251-140ac061-57fa-4f58-8230-dd287f179fe5.png" />
 </p>
 
 
