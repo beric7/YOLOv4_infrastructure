@@ -29,6 +29,23 @@
 - Created a yolov4 conversion script, **TODO add name**, to convert our xml annotations to the yolov4 textfile format
 
 - The model achieved the highest **Mean Average Precision (mAP)** score at the **7000 iteration** checkpoint with a **mAP score of 84.52%**
+  when detecting these 4 structual component:
+```
+          Bearing
+          Out of Plane Stiffener
+          Gusset Plate Connection
+          Cover Plate Termination:
+```
+- The following results are similarity scores for the model's predicted bounding boxes and the annotated bounding boxes:
+```
+Gusset Plate Connection: 99%	(left_x:    0   top_y:  214   width:   53   height:   66)
+Out of Plane Stiffener: 97%	(left_x:   51   top_y:  152   width:   21   height:  163)
+Out of Plane Stiffener: 95%	(left_x:   99   top_y:  118   width:   19   height:  192)
+Gusset Plate Connection: 100%	(left_x:  150   top_y:   67   width:   38   height:   82)
+Gusset Plate Connection: 95%	(left_x:  153   top_y:  252   width:   35   height:   31)
+Out of Plane Stiffener: 99%	(left_x:  166   top_y:   59   width:   28   height:  253)
+Out of Plane Stiffener: 94%	(left_x:  278   top_y:   -1   width:   43   height:  307)
+```
 - The model began to experience overfitting around **8000 iterations** and therefore the mAP score would decrease with further iterations
 
 <p align="center">
@@ -40,6 +57,8 @@
     <img src="https://user-images.githubusercontent.com/54971419/124635758-cb571380-de55-11eb-8d3d-419603c25c81.png" />
     <img src="https://user-images.githubusercontent.com/54971419/124635122-145a9800-de55-11eb-844f-230ba745c5aa.png" />
 </p>
+
+
 
 ## Requirements
 - CMake >= 3.18
