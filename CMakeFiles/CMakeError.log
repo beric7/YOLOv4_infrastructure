@@ -1,0 +1,14 @@
+Looking for a CUDA compiler failed with the following output:
+-- Selecting Windows SDK version 10.0.19041.0 to target Windows 10.0.19042.
+CMake Error at C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeDetermineCompilerId.cmake:441 (message):
+  No CUDA toolset found.
+Call Stack (most recent call first):
+  C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeDetermineCompilerId.cmake:6 (CMAKE_DETERMINE_COMPILER_ID_BUILD)
+  C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeDetermineCompilerId.cmake:58 (__determine_compiler_id_test)
+  C:/Program Files/CMake/share/cmake-3.20/Modules/CMakeDetermineCUDACompiler.cmake:278 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/joshb/work/yolov4/darknet/CMakeFiles/CheckCUDA/CMakeFiles/CMakeOutput.log".
+
