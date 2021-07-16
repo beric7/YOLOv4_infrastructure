@@ -26,7 +26,7 @@
 - Created a conversion script, **TODO add name**, to take the resultant labelme json file and convert it to text file format so the keypoint values could
   be stored and used to create the xml format annotations for our objects. This script then converts back to json format.
 
-- Created a yolov4 conversion script, **TODO add name**, to convert our xml annotations to the yolov4 textfile format
+- Created a yolov4 conversion script, Example: **xml_to_yolo_format.py**, to convert our xml annotations to the yolov4 textfile format
 
 - The model achieved the highest **Mean Average Precision (mAP)** score at the **7000 iteration** checkpoint with a **mAP score of 84.52%**
   when detecting these 4 structual component:
