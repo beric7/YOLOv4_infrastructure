@@ -6,6 +6,8 @@
 
 [Custom Training Google Colab](https://colab.research.google.com/drive/1MOjUxrYAl05Be2QVPyDC0D8bZ2TVXCif)
 
+[Partial Dataset Used](https://data.lib.vt.edu/articles/dataset/COCO-Bridge_Common_Objects_in_Context_Dataset_for_Structural_Detail_Detection_of_Bridges/14097068)
+
 **TODO add colab that clones our repository for reproducing results**
 
 ## Yolov4 Summary
@@ -77,11 +79,14 @@ Out of Plane Stiffener: 94%	(left_x:  278   top_y:   -1   width:   43   height: 
 - GPU with Compute Capability (CC) >= 3.0 (If GPU a GeForce GTX 650 or newer it is most likely compatible)
 
 ## Reproduce Results
-- Download the [Google Colab](https://colab.research.google.com/drive/1MOjUxrYAl05Be2QVPyDC0D8bZ2TVXCif) to Google Drive and clone this
-  repository.
+- Download the [Google Colab](https://drive.google.com/drive/u/1/folders/1FFRRw1OoenVb4nAc70Iw1BGja1gF4SxE) to Google Drive
+  
+- Clone the [repository](https://github.com/beric7/YOLOv4_infrastructure.git) and download the [Partial Dataset](https://data.lib.vt.edu/articles/dataset/COCO-Bridge_Common_Objects_in_Context_Dataset_for_Structural_Detail_Detection_of_Bridges/14097068) to use for detection on the pretrained model.
+
+- Download the checkpoint weight file [***yolo-obj_7000.weights***](https://drive.google.com/drive/u/0/folders/1FFRRw1OoenVb4nAc70Iw1BGja1gF4SxE) to use for initial training and place within the "backup" directory.
 
 ## Setup for Training
-1. Clone the [repository](https://github.com/AlexeyAB/darknet.git)
+1. Clone the [repository](https://github.com/beric7/YOLOv4_infrastructure.git), download the [Partial Dataset](https://data.lib.vt.edu/articles/dataset/COCO-Bridge_Common_Objects_in_Context_Dataset_for_Structural_Detail_Detection_of_Bridges/14097068), and download the [google colab](https://colab.research.google.com/drive/1MOjUxrYAl05Be2QVPyDC0D8bZ2TVXCif)
 
 
 2. Download the base weight file [***yolov4.conv.137***](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137) to use for initial training and place within the "darknet" directory
