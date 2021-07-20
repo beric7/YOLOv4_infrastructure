@@ -10,7 +10,7 @@
 
 ## Yolov4 Summary
 
-- YoloV4 is a real-time state-of-the-art object detector. Modern Neural Networks operated in real-time
+- YoloV4 is a real-time state-of-the-arc object detector. Modern Neural Networks operated in real-time
   require significant power from multiple GPU's, while YoloV4 uses a Convolutional Neural Network (CNN) that
   can reduce the consumption to one singular GPU. YoloV4 has comparable results to state-of-the-art real-time
   object detection models and runs twice as fast
