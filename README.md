@@ -25,7 +25,7 @@
 - Our dataset was focused on the structual components found on the underside of bridges. The images in the dataset were annotated
   using [labelme](https://github.com/wkentaro/labelme). 
   
-- Created a conversion script, **TODO add name**, to take the resultant labelme json file and convert it to text file format so the keypoint values could
+- Created a conversion script, **keypoint-to-text-to-json.py**, to take the resultant labelme json file and convert it to text file format so the keypoint values could
   be stored and used to create the xml format annotations for our objects. This script then converts back to json format.
 
 - Created a yolov4 conversion script, **xml_to_yolo_format.py**, to convert our xml annotations to the yolov4 textfile format
