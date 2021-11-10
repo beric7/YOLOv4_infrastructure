@@ -217,3 +217,15 @@ Out of Plane Stiffener: 94%	(left_x:  278   top_y:   -1   width:   43   height: 
 ```
 colabImageShow('predictions.jpg')
 ```
+
+## Citation
+Structural Detail Dataset: 
+```
+Bianchi, Eric; Hebdon, Matthew (2021): COCO-Bridge 2021+ Dataset. 
+University Libraries, Virginia Tech. Dataset. https://doi.org/10.7294/16624495.v1 
+```
+
+Structural Detail Model:
+```
+Bianchi, Eric; Hebdon, Matthew (2021): SSD and YOLOv4 Model for Structural Detail Detection. 
+University Libraries, Virginia Tech. Software. https://doi.org/10.7294/16625095.v1 
