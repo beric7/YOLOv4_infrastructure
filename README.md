@@ -228,4 +228,18 @@ University Libraries, Virginia Tech. Dataset. https://doi.org/10.7294/16624495.v
 Structural Detail Model:
 ```
 Bianchi, Eric; Hebdon, Matthew (2021): SSD and YOLOv4 Model for Structural Detail Detection. 
-University Libraries, Virginia Tech. Software. https://doi.org/10.7294/16625095.v1 
+University Libraries, Virginia Tech. Software. https://doi.org/10.7294/16625095.v1
+```
+
+Paper
+```
+@article{doi:10.1061/(ASCE)CP.1943-5487.0001045,
+author = {Eric Bianchi  and Matthew Hebdon },
+title = {Development of Extendable Open-Source Structural Inspection Datasets},
+journal = {Journal of Computing in Civil Engineering},
+volume = {36},
+number = {6},
+pages = {04022039},
+year = {2022},
+doi = {10.1061/(ASCE)CP.1943-5487.0001045},
+```
